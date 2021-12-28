@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color:white;
+}
+
+p {
+    color: white;
+}
+
+a {
+    color: lightskyblue;
+}
+.bgimage {
+    opacity: 0.3;
+    position: absolute;
+    left: -320px;
+    right: 0;
+    top: 0;
+    width: fit-content;
+    height: fit-content;
+    
+}
+
+.content {
+    position: relative;
+}
