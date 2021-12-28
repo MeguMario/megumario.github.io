@@ -3,4 +3,6 @@
 
 Get your ass back to the [main page](https://megumario.github.io/index.html), will you  =3
 
+This repo contains a fork of [my friend's webpage](https://github.com/winnyace/winnyace.github.io)
+
 Actually nevermind
