@@ -1,0 +1,63 @@
+	@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+	body{
+		overflow-x: hidden;
+		font-family: Poppins;
+		background-color: rgba(0,0,0,1);
+	}
+	
+	h1, p, a{
+		color: white;
+	}
+	
+	a {
+		float: left;
+		padding: 15px;	
+	} 
+	
+	.video-container{
+		width: 0;
+		height: 0;
+		opacity: 0.5;
+	}
+	
+	.osulogo{
+		height: 45px;
+		width: 45x;
+		float: left;
+		padding: 5px;		
+	}
+	
+	.osulink{
+		clear:both
+		float:right;
+	}			
+	
+	iframe {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width:100vw;
+		height:100vh;
+		transform: translate(-50%, -50%);
+	}
+	
+	
+	#text{
+		position: absolute;
+		color: #FFFFFF;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+		
+	@nedia (min-aspect-ratio: 16/9) {
+		.video-container iframe {
+			height: 56.25vw;
+		}
+	
+	@nedia (min-aspect-ratio: 16/9) {
+		.video-container iframe {
+			width: 177.78vw;
+		}	
+
+	
