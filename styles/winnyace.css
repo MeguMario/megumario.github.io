@@ -1,5 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
     background-color: black;
+	font-family:Roboto;
+}
+
+.rotate {
+	display: flex;
+	animation: rotation 1s infinite linear;	 
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 h1 {
@@ -12,6 +28,7 @@ p {
 
 a {
     color: lightskyblue;
+	text-align: center;
 }
 .bgimage {
     opacity: 0.3;
