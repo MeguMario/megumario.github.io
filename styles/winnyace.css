@@ -1,7 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 body {
     background-color: black;
-	font-family:Roboto;
+	font-family:Ubuntu;
+	padding: 50px;
+	background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../elements/background.png); 
+	background-repeat: repeat-xy;
+	background-attachment: local;
+	background-position: center top;
+}
+
+.grid-container{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-content: flex-start;
+}
+
+.osulogo{
+	display: inline-block;
+	padding: 25px;
+	margin: auto;	
 }
 
 .rotate {
@@ -18,27 +36,8 @@ body {
   }
 }
 
-h1 {
-    color:white;
-}
-
-p {
+h1, p{
     color: white;
-}
-
-a {
-    color: lightskyblue;
-	text-align: center;
-}
-.bgimage {
-    opacity: 0.3;
-    position: absolute;
-    left: -320px;
-    right: 0;
-    top: 0;
-    width: fit-content;
-    height: fit-content;
-    
 }
 
 .content {
