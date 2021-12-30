@@ -11,7 +11,6 @@
 		background-color: transparent;
 		border: none;
 		outline: none;
-		overflow: hidden;
 		pointer-events: fill;
 	}
 	
@@ -34,10 +33,8 @@
 		color: white;
 	}
 	
-	
 	h2{
-		font-size: 18px;
-		
+		font-size: 18px;	
 	}
 	
 	a {
@@ -74,21 +71,11 @@
 	
 	.osulogo{
 		height: 45px;
-		width: 45x;
-		float: left;
+		width: 45px;
 		padding: auto;
 		margin: auto;		
 		vertical-align: middle;
 	}
-	
-	.credit{
-		display:inline;
-	}
-
-	.osulink{
-		clear:both;
-		float:right;
-	}			
 	
 	iframe {
 		position: absolute;
@@ -110,9 +97,9 @@
 	@nedia (min-aspect-ratio: 16/9) {
 		.video-container iframe {
 			height: 56.25vw;
-		}
+	}
 	
 	@nedia (min-aspect-ratio: 16/9) {
 		.video-container iframe {
 			width: 177.78vw;
-		}	
+	}	
