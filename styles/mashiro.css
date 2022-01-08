@@ -1,10 +1,16 @@
 	@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 	body{
-		overflow-x: hidden;
+		display: flex;
+		flex-direction: column;
+		overflow-wrap: normal;
+		overflow: auto;
 		font-family: Poppins;
 		background-color: rgba(0,0,0,1);
 		background-attachment: scroll;
-		background-position: center top;
+		background-position: center top;	
+		justify-content: center;		
+		align-items: center safe;
+		min-height: 95vh; 
 	}
 	
 	button{
@@ -16,14 +22,13 @@
 	
 	.boxed{
 		display: grid;
-		height:auto;
+		height: auto;
 		width: auto;
 		background-color: rgba(0,0,0,0.65);
 		padding: 20px;	
 		margin: auto;
+		clear: both;
 		justify-content: space-evenly;
-		flex-direction: row;
-		flex-wrap: wrap;
 		grid-template-columns: repeat(auto-fill, minmax(100px, max-content));
 		grid-template-rows: auto;
 		grid-row-gap: 20px;
@@ -56,17 +61,25 @@
 	
 	.info {
 		color: white;
-		background-color: rgba(0,0,0,0.75) ;
-		margin: auto;
+		background-color: rgba(0,0,0,0.50);
+		margin: 0 auto;
 		padding: 15px;		
 		display: none;
-		clear:both;
-		grid-column: span 16;
+		clear: both;
+		text-align: left;
+		position: fixed;
+		/*grid-column: span 16;*/
 	}
 	
-	.discord:focus ~ .info
+	.discord:hover ~ .info
 	{
-		display: flex;
+		display: flex; 
+		justify-content: center;
+		align-items: center;
+		top: 2%;
+		left: 50%;
+		width: 25%;
+		transform: translate(-50%, 0%);
 	}
 	
 	.osulogo{
@@ -75,6 +88,10 @@
 		padding: auto;
 		margin: auto;		
 		vertical-align: middle;
+	}
+	
+	.scrollfix{
+		clear: both;
 	}
 	
 	iframe {
@@ -87,11 +104,19 @@
 	}
 	
 	#text{
-		position: absolute;
 		color: #FFFFFF;
-		left: 50%;
+		/*
+		position: absolute;
 		top: 50%;
+		left: 50%;
 		transform: translate(-50%, -50%);
+		*/
+		min-height: 100%;
+		width: 50%;
+		height: auto;
+		padding: auto;
+		margin: auto;
+		
 	}
 		
 	@nedia (min-aspect-ratio: 16/9) {
