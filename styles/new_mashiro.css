@@ -1,0 +1,113 @@
+	@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+	body{
+		display: flex;
+		flex-direction: column;
+		overflow-wrap: normal;
+		overflow: auto;
+		font-family: Poppins;
+		background-color: rgba(0,0,0,1);
+		background-attachment: scroll;
+		background-position: center top;	
+		min-height: 95vh; 
+	}
+		
+	#text{
+		position: relative;
+		color: #FFFFFF;
+		min-height: 100%;
+		width: 50%;
+		height: auto;
+		padding: auto;
+		margin: 50px;
+		color: white;
+		align-items: center;
+		top: 100px;
+	}
+		
+	.web_logo_header
+	{
+		height: 60px;
+		width: 60px;
+		padding: 15px;
+		margin: auto;
+	}
+	
+	.web_fallback_header
+	{
+		height: 40px;
+		width: 40px;
+		padding: 15px;
+		margin: auto;
+		grid-area: -1;
+	}
+	
+	.headerbar
+	{
+		display: grid;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		padding: auto;
+		margin: 0px;
+		clear: both;
+		justify-content: space-evenly;
+		grid-template-columns: repeat(auto-fill, minmax(100px, max-content));
+		grid-template-rows: auto;
+		grid-row-gap: 20px;
+		border-radius: 15px;
+		align-items: center;
+	}
+	
+	.video-container
+	{
+		background: rgba(0,0,0,1);
+		position: fixed;
+		top: 0; 
+		right: 0; 
+		bottom: 0; 
+		left: 0;
+		z-index: -99;
+		opacity: 0.35;
+	}
+	
+	iframe 
+	{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width:100%;
+		height:100%;
+		pointer-events: none;
+	}
+		
+	@nedia (min-aspect-ratio: 16/9)
+	{
+		.video-container iframe 
+		{
+			height: 56.25vw;
+		}
+	}
+	
+	@nedia (min-aspect-ratio: 16/9)
+	{
+		.video-container iframe
+		{
+			width: 177.78vw;
+		}
+	}	
+
+	button
+	{
+		background-color: transparent;
+		border: none;
+		outline: none;
+		pointer-events: fill;
+	}
+	
+	#particles-js 
+	{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+	}
+	
