@@ -41,7 +41,8 @@
 	
 	.headerbar sussy
 	{
-		background-color: white;
+		background-color: rgba(255,255,255,0.85);
+		backdrop-filter: blur(5px);
 		border: none;
 		display: inline-block;
 		text-align: center;
@@ -51,14 +52,13 @@
 		padding: 10px 24px;
 		border-radius: 25px;
 	}
-	
 		
 	.headerbar sussybaka
 	{
 		background-color: transparent;
 		border: none;
-		display: inline-block;
 		text-align: center;
+		display: inline-block;
 		text-decoration: none;
 		color: white;
 		font-size: 16px;
@@ -76,6 +76,7 @@
 		border: none;
 		outline: none;
 		pointer-events: fill;
+		transition-duration: 0.4s;
 	}
 	
 	.boxed{
@@ -85,6 +86,7 @@
 		background-color: rgba(0,0,0,0.65);
 		padding: 20px;	
 		margin: auto;
+		backdrop-filter: blur(15px);
 		clear: both;
 		justify-content: space-evenly;
 		grid-template-columns: repeat(auto-fill, minmax(100px, max-content));
@@ -93,9 +95,25 @@
 		border-radius: 15px;
 	}
 	
-	h1, h2, h4, p, a{
-		color: white;
+	.boxed2{
+		display: grid;
+		position: relative;
+		top: 180px;
+		height: auto;
+		width: auto;
+		background-color: rgba(255,255,255,0.50);
+		padding: 30px;	
+		margin: auto;
+		backdrop-filter: blur(15px);
+		clear: both;
+		justify-content: space-evenly;
+		grid-template-columns: repeat(auto-fill, minmax(500px, max-content));
+		grid-template-rows: auto;
+		grid-row-gap: 250px;
+		border-radius: 15px;
 	}
+	
+	
 	
 	h2{
 		font-size: 18px;	
@@ -125,21 +143,31 @@
 		padding: 15px;		
 		display: none;
 		clear: both;
+		top: -220%;
+		left: 50%;
+		width: 50%;
 		text-align: left;
 		position: fixed;
+		justify-content: center;
+		align-items: center;
+		transform: translate(-50%, 0%);
+		border-radius: 15px;
 		/*grid-column: span 16;*/
 	}
 	
 	.discord:hover ~ .info
 	{
 		display: flex; 
-		justify-content: center;
-		align-items: center;
-		top: 2%;
-		left: 50%;
-		width: 25%;
-		transform: translate(-50%, 0%);
-		border-radius: 15px;
+	}
+	
+	#discord_widget
+	{
+		position: relative;
+		width: 500px;
+		height: 500px;
+		object-position: right;
+		padding: auto;
+		pointer-events: auto;
 	}
 	
 	.osulogo{
@@ -176,9 +204,28 @@
 		height: auto;
 		padding: auto;
 		margin: auto;
-		
+	}
+	
+	#text2{
+		color: #000000;
+		/*
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		*/
+		min-height: 100%;
+		width: 100%;
+		height: auto;
+		padding: 15px;
+		margin: auto;
 	}
 		
+	button:hover
+	{
+		transform: scale(1.15) perspective(1px)
+	}
+	
 	@nedia (min-aspect-ratio: 16/9) {
 		.video-container iframe {
 			height: 56.25vw;

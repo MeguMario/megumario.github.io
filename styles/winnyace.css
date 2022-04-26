@@ -28,7 +28,8 @@ body {
 	
 	.headerbar sussy
 	{
-		background-color: white;
+		background-color: rgba(255,255,255,0.85);
+		backdrop-filter: blur(5px);
 		border: none;
 		display: inline-block;
 		text-align: center;
@@ -63,6 +64,12 @@ body {
 		border: none;
 		outline: none;
 		pointer-events: fill;
+		transition-duration: 0.4s;
+	}
+	
+	button:hover
+	{
+		transform: scale(1.15) perspective(1px)
 	}
 	
 .grid-container{
