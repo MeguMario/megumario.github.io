@@ -5,9 +5,10 @@
 		overflow-wrap: normal;
 		overflow: auto;
 		font-family: Poppins;
-		background-color: rgba(0,0,0,1);
-		background-attachment: scroll;
-		background-position: center top;	
+		background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(https://cdn.discordapp.com/attachments/782985353262268429/962228125931020339/top_bg.png); 
+		background-repeat: repeat-xy;
+		background-attachment: local;
+		background-position: center top;
 		min-height: 95vh; 
 	}
 		
@@ -21,7 +22,7 @@
 		margin: 50px;
 		color: white;
 		align-items: center;
-		top: 100px;
+		font-size: 12px;
 	}
 	
 	.headerbar
@@ -85,32 +86,6 @@
 		z-index: -99;
 		opacity: 0.35;
 	}
-	
-	iframe 
-	{
-		position: absolute;
-		top: 0;
-		left: 0;
-		width:100%;
-		height:100%;
-		pointer-events: none;
-	}
-		
-	@nedia (min-aspect-ratio: 16/9)
-	{
-		.video-container iframe 
-		{
-			height: 56.25vw;
-		}
-	}
-	
-	@nedia (min-aspect-ratio: 16/9)
-	{
-		.video-container iframe
-		{
-			width: 177.78vw;
-		}
-	}	
 
 	.headerbar button
 	{
@@ -128,3 +103,12 @@
 		z-index: -1;
 	}
 	
+	iframe
+	{		
+		display: flex;
+		background-color: transparent;
+		padding: auto;	
+		margin: auto;
+		clear: both;
+		border-radius: 15px;
+	}
