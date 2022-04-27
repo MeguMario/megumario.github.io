@@ -3,6 +3,6 @@
 
 Get your ass back to the [main page](https://megumario.github.io/index.html), will you  =3
 
-This page used  [VincentGarreau's particle.js for it's particle background](https://vincentgarreau.com/particles.js/).
+This page used  [VincentGarreau's particle.js for its particle background](https://vincentgarreau.com/particles.js/).
 
 Actually nevermind
