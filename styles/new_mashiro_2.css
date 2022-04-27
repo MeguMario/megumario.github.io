@@ -96,24 +96,20 @@
 	}
 	
 	.boxed2{
-		display: grid;
+		display: flex;
 		position: relative;
 		top: 180px;
-		height: auto;
+		height: 100%;
 		width: auto;
-		background-color: rgba(255,255,255,0.50);
+		background-color: rgba(255,255,255,0.75);
 		padding: 30px;	
 		margin: auto;
 		backdrop-filter: blur(15px);
-		clear: both;
-		justify-content: space-evenly;
-		grid-template-columns: repeat(auto-fill, minmax(500px, max-content));
-		grid-template-rows: auto;
-		grid-row-gap: 250px;
 		border-radius: 15px;
+		overflow-wrap: break-word;
+		overflow: hidden;
+		flex-wrap:wrap;
 	}
-	
-	
 	
 	h2{
 		font-size: 18px;	
@@ -163,12 +159,12 @@
 	#discord_widget
 	{
 		position: relative;
-		width: 500px;
-		height: 500px;
-		object-position: right;
+		width: 100%;
+		height: 550px;
 		padding: auto;
 		pointer-events: auto;
 	}
+
 	
 	.osulogo{
 		height: 45px;
@@ -217,13 +213,94 @@
 		min-height: 100%;
 		width: 100%;
 		height: auto;
-		padding: 15px;
+		padding: auto;
 		margin: auto;
 	}
 		
 	button:hover
 	{
 		transform: scale(1.15) perspective(1px)
+	}
+	
+	.hamburgermenu
+	{
+		display: none;
+	}
+	
+	@media only screen and (max-width: 768px) and (max-width: 1024px)
+	{
+		.headerbar
+		{
+			display: none;
+		}
+		.hamburgermenu
+		{
+			display: inline-block;
+		}
+	}
+	
+	.burger-shower
+	{
+		visibility: hidden;
+	}
+	
+	#hammenu
+	{
+		font-family: Poppins;
+		padding: auto;
+		margin: auto;
+	}
+	
+	#hammenu #sidemenu
+	{
+		position: absolute;
+		visibility: hidden;
+		transition: 0.4s;
+		left:-500px;
+		height: 100%;
+		width: 350px;
+		background-color: rgba(255,255,255,0.75);
+		backdrop-filter: blur(25px);
+		padding: 5px;
+		box-sizing: border-box;
+		border-radius: 15px;
+		z-index: 99;
+	}
+	
+	#hammenu ul
+	{
+		display: inline-block;
+		list-style: none;
+		font-size: 50px;
+		list-style-type: none;
+		line-height: 2;
+	}
+	
+	#hammenu li a
+	{
+		display: inline-block;
+		text-align: left;
+		text-decoration: none;
+		text-color: white;
+		color: black;
+		transition-duration: 0.4s;
+	}
+	
+	#hammenu a:hover
+	{
+		transform: scale(1.15) perspective(1px);
+	}
+
+	#hamburger-input:checked + #hammenu #sidemenu
+	{
+		visibility: visible;
+		left: 0;
+	}
+	
+	#hamburger-input:check ~ .overlay
+	{
+		visibility:visible;
+		opacity: 0.4;
 	}
 	
 	@nedia (min-aspect-ratio: 16/9) {
@@ -235,3 +312,4 @@
 		.video-container iframe {
 			width: 177.78vw;
 	}	
+	

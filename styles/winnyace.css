@@ -88,6 +88,89 @@ body {
 	margin: auto;
 }
 
+	.hamburgermenu
+	{
+		display: none;
+	}
+	
+	@media only screen and (max-width: 768px) and (max-width: 1024px)
+	{
+		.headerbar
+		{
+			display: none;
+		}
+		.hamburgermenu
+		{
+			display: inline-block;
+		}
+	}
+	
+	.burger-shower
+	{
+		visibility: hidden;
+	}
+	
+	#hammenu
+	{
+		font-family: Poppins;
+		padding: auto;
+		margin: auto;
+	}
+	
+	#hammenu #sidemenu
+	{
+		overflow:hidden;
+		position: absolute;
+		visibility: hidden;
+		transition: 0.4s;
+		left:-500px;
+		height: 300%;
+		width: 350px;
+		background-color: rgba(255,255,255,0.75);
+		backdrop-filter: blur(25px);
+		padding: 5px;
+		box-sizing: border-box;
+		border-radius: 15px;
+		z-index: 99;
+	}
+	
+	#hammenu ul
+	{
+		display: inline-block;
+		list-style: none;
+		font-size: 50px;
+		list-style-type: none;
+		line-height: 2;
+	}
+	
+	#hammenu li a
+	{
+		display: inline-block;
+		text-align: left;
+		text-decoration: none;
+		text-color: white;
+		color: black;
+		transition-duration: 0.4s;
+	}
+	
+	#hammenu a:hover
+	{
+		transform: scale(1.15) perspective(1px);
+	}
+
+	#hamburger-input:checked + #hammenu #sidemenu
+	{
+		visibility: visible;
+		left: 0;
+	}
+	
+	#hamburger-input:check ~ .overlay
+	{
+		visibility:visible;
+		opacity: 0.4;
+	}
+	
+
 .rotate {
 	display: flex;
 	animation: rotation 1s infinite linear;	 
