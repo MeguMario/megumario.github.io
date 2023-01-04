@@ -1,20 +1,19 @@
 <!doctype html>
 <html lang='en'>
 <head>
-	<link href="styles/new_mashiro_2.css" rel="stylesheet">
+	<link href="styles/main.css" rel="stylesheet">
+	<link href="styles/hamandhead.css" rel="stylesheet">
+	<link href="styles/info.css" rel="stylesheet">
+	<link href="styles/iframe_youtubebg.css" rel="stylesheet">
 	<link link rel="shortcut icon" type="image/png" href="elements/asukafly.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
 	<div id="particles-js"></div>
 	<script src="script/particles.min.js"></script>
 	<script src="script/app.js"></script>
+	<script src="script/titlebar.js" defer></script>
 	<title>Meguro's info page</title>
-	<div class="headerbar">
-		<button type="button" class="headerbar" title="Homepage"><a href="index.html"><img src="elements/asukafly.png" class="web_logo_header"/></a></button> 
-		<button	type="button" class="headerbar"><a href="donate.html"><sussy>Donate</sussy></a></button>	
-		<button	type="button" class="headerbar"><a href="info.html"><sussybaka>Links</sussybaka></a></button>	
-		<button	type="button" class="headerbar"><a href="winnyace.html"><sussybaka>Winnyace</sussybaka></a></button>
-	</div> 
+	<div class="headerbar" id="headerbarjs"></div> 
 	<div class="hamburgermenu">
 			<button type="button" class="hamburgermenu" title="Homepage"><a href="index.html"><img src="elements/asukafly.png" class="web_logo_header"/></a></button> 
 			<input type="checkbox" id="hamburger-input" class="burger-shower"/>
@@ -64,12 +63,5 @@
 	<p></p>
 	</div>
 	<div>
-	<div class="boxed2">
-		<div id="text2">
-			<h1>Wanna hang out with us?</h1>
-			<p>Join my small server, because well, why not?</p>
-		</div>
-		<iframe id="discord_widget" src="https://discord.com/widget?id=646377817176670218&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-	</div>
 </body>
 </html>

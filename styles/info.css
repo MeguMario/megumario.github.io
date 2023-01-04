@@ -1,0 +1,139 @@
+
+	.web_logo_header
+	{
+		height: 50px;
+		width: 50px;
+	}
+	
+	button{
+		background-color: transparent;
+		border: none;
+		outline: none;
+		pointer-events: fill;
+		transition-duration: 0.4s;
+	}
+	
+	.boxed{
+		display: grid;
+		height: auto;
+		width: auto;
+		background-color: rgba(0,0,0,0.65);
+		padding: 20px;	
+		margin: auto;
+		backdrop-filter: blur(15px);
+		clear: both;
+		justify-content: space-evenly;
+		grid-template-columns: repeat(auto-fill, minmax(100px, max-content));
+		grid-template-rows: auto;
+		grid-row-gap: 20px;
+		border-radius: 15px;
+	}
+	
+	.boxed2{
+		display: flex;
+		position: relative;
+		top: 180px;
+		height: 100%;
+		width: auto;
+		background-color: rgba(255,255,255,0.75);
+		padding: 30px;	
+		margin: auto;
+		backdrop-filter: blur(15px);
+		border-radius: 15px;
+		overflow-wrap: break-word;
+		overflow: hidden;
+		flex-wrap:wrap;
+	}
+	
+	h2{
+		font-size: 18px;	
+	}
+	
+	a {
+		float: left;
+		padding: auto;	
+		margin: auto;
+	} 
+	
+	.info {
+		color: white;
+		background-color: rgba(0,0,0,0.50);
+		margin: 0 auto;
+		padding: 15px;		
+		display: none;
+		clear: both;
+		top: -220%;
+		left: 50%;
+		width: 50%;
+		text-align: left;
+		position: fixed;
+		justify-content: center;
+		align-items: center;
+		transform: translate(-50%, 0%);
+		border-radius: 15px;
+		/*grid-column: span 16;*/
+	}
+	
+	.discord:hover ~ .info
+	{
+		display: flex; 
+	}
+	
+	#discord_widget
+	{
+		position: relative;
+		width: 100%;
+		height: 550px;
+		padding: auto;
+		pointer-events: auto;
+	}
+
+	
+	.osulogo{
+		height: 45px;
+		width: 45px;
+		padding: auto;
+		margin: auto;		
+		vertical-align: middle;
+	}
+	
+	.scrollfix{
+		clear: both;
+	}
+	
+	#text{
+		color: #FFFFFF;
+		/*
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		*/
+		min-height: 100%;
+		width: 50%;
+		height: auto;
+		padding: auto;
+		margin: auto;
+	}
+	
+	#text2{
+		color: #000000;
+		/*
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		*/
+		min-height: 100%;
+		width: 100%;
+		height: auto;
+		padding: auto;
+		margin: auto;
+	}
+		
+	button:hover
+	{
+		transform: scale(1.15) perspective(1px)
+	}
+
+	
