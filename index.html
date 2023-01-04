@@ -12,33 +12,22 @@
 	<script src="script/particles.min.js"></script>
 	<script src="script/app.js"></script>
 	<script src="script/titlebar.js" defer></script>
+	<script src="script/hamburger.js" defer></script>
 	<title>Meguro's homepage</title>
 	<div class="video-container">
-		<iframe frameborder="0" src="https://www.youtube-nocookie.com/embed/KK9bwTlAvgo?autoplay=1&controls=0&playlist=KK9bwTlAvgo&loop=1&mute=1"></iframe>
+		<iframe frameborder="0" src="https://www.youtube-nocookie.com/embed/pGapnPawXqo?autoplay=1&controls=0&playlist=pGapnPawXqo&loop=1&mute=1"></iframe>
 	</div>
 	<div class="headerbar" id="headerbarjs"></div> 
-	<div class="hamburgermenu">
-			<button type="button" class="hamburgermenu" title="Homepage"><a href="index.html"><img src="elements/asukafly.png" class="web_logo_header"/></a></button> 
-			<input type="checkbox" id="hamburger-input" class="burger-shower"/>
-			<label id="hammenu" for="hamburger-input" class="hamburgermenu">
-				<img src="elements/hamburger_menu.svg" class="web_logo_header"/>
-				<nav id="sidemenu">
-					<ul>
-						<li><a href="donate.html">Donate</a></li>
-						<li><a href="info.html">Links</a></li>
-						<li><a href="winnyace.html">Winnyace</a></li>
-					</ul>
-				</nav>
-			</label>
-			<div class="overlay"></div>
+	<div class="hamburgermenu" id="hamburgerjs">
+
 	</div>
 </head>
 <body>
 	<div id="text" class="body">
 		<h1><strong>Welcome to Meguro's website</strong></h1>
 		<p>enjoy this bocchi gif while i'm rewriting this website</p>
-		<img src="/elements/bocchi-bocchi-the-rock.gif">
 	</div>
-
+	<a href="https://bocchi.rocks/"><img id="bocchigif" src="/elements/bocchi-bocchi-the-rock.gif"></a>
+	<p id="text">And yes, the background is indeed playing Bocchi Clip</p>
 </body>
 </html>

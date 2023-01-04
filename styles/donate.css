@@ -1,10 +1,9 @@
 	body{
-		background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(https://cdn.discordapp.com/attachments/782985353262268429/962228125931020339/top_bg.png); 
+		background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(/elements/bocchi-bocchi-the-rock.gif); 
 	}
 	
 	#text{
 		color: #FFFFFF;
-        padding: 10vh;
         align-items: center;
         display: block;
         text-align: center;
@@ -13,32 +12,31 @@
 	.video-container
 	{
 		background: rgba(0,0,0,1);
-		position: fixed;
-		top: 0; 
-		right: 0; 
-		bottom: 0; 
-		left: 0;
+		position: relative;
 		z-index: -99;
 		opacity: 0.35;
 	}
 
 	.container
 	{
-		padding-top: 25px;
+		padding: 25px;
 		overflow: hidden;
 	}
 	
 	.youtube
 	{
-		width: 100%;
+		width: 112vh;
+		height: 63vh;
 	}
 	
 	iframe
 	{		
 		display: flex;
 		background-color: transparent;
-		padding: auto;	
+		padding-top: auto;
+		padding-left: auto;	
+		padding-right: auto;
 		margin: auto;
 		clear: both;
-		border-radius: 15px;
+		border-radius: 25px;
 	}

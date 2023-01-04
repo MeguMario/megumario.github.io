@@ -96,36 +96,24 @@ button:hover
 		position: absolute;
 		visibility: hidden;
 		transition: 0.4s;
-		left:-500px;
-		height: 100%;
-		width: 350px;
-		background-color: rgba(255,255,255,0.75);
+		top: -500px;
+		right: 0; bottom: 0; left: 0;
+		margin-left: auto;
+		margin-right: auto;
+		height: 22%;
+		border-radius: 0px 0px 15px 15px;
+		background-color: rgba(255,255,255,0.50);
 		backdrop-filter: blur(25px);
 		padding: 5px;
 		box-sizing: border-box;
-		border-radius: 15px;
 		z-index: 99;
+		display: inline-flex;
+		justify-content: space-evenly;
+		flex-flow: row;
+		align-items: center;
+		padding: auto;	
 	}
-	
-	#hammenu ul
-	{
-		display: inline-block;
-		list-style: none;
-		font-size: 50px;
-		list-style-type: none;
-		line-height: 2;
-	}
-	
-	#hammenu li a
-	{
-		display: inline-block;
-		text-align: left;
-		text-decoration: none;
-		text-color: white;
-		color: black;
-		transition-duration: 0.4s;
-	}
-	
+
 	#hammenu a:hover
 	{
 		transform: scale(1.15) perspective(1px);
@@ -134,11 +122,11 @@ button:hover
 	#hamburger-input:checked + #hammenu #sidemenu
 	{
 		visibility: visible;
-		left: 0;
+		top: 0;
 	}
 	
 	#hamburger-input:check ~ .overlay
 	{
-		visibility:visible;
+		visibility: visible;
 		opacity: 0.4;
 	}
