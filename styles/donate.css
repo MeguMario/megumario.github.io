@@ -19,7 +19,7 @@
 
 	.container
 	{
-		padding: 25px;
+		padding-top: 25px;
 		overflow: hidden;
 	}
 	
@@ -29,14 +29,22 @@
 		height: 63vh;
 	}
 	
+	@media only screen and (max-width: 512px) and (max-width: 717px)
+	{
+		.youtube
+		{
+			width: 36vh;
+			height: 64vh;
+		}
+	}
+
 	iframe
 	{		
 		display: flex;
 		background-color: transparent;
 		padding-top: auto;
-		padding-left: auto;	
-		padding-right: auto;
-		margin: auto;
+		margin-left: auto;
+    	margin-right: auto;
 		clear: both;
 		border-radius: 25px;
 	}
