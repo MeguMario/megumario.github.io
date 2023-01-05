@@ -101,6 +101,10 @@ button{
 		{
 			display: none;
 		}
+		.hamburgermenu
+		{
+			display: flex;
+		}
 	}
 	
 	#hamburger-input
