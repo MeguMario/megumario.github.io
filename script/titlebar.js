@@ -20,6 +20,7 @@ function homepagebutton() {
     const homepage_img = document.createElement("img");
     homepage_img.setAttribute("src", webelement_path + "asukafly.png");
     homepage_img.setAttribute("class", "web_logo_header");
+    homepage_img.setAttribute("id","asuka_homebutton");
     homepage_link.appendChild(homepage_img);
     homepage_main.appendChild(homepage_link);
     return homepage_main;

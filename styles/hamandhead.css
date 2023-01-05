@@ -4,17 +4,45 @@
 	width: 50px;
 }
 
+button:hover
+{
+	transform: scale(1.15) perspective(1px)
+}
+
 button{
 	background-color: transparent;
 	border: none;
 	outline: none;
 	pointer-events: fill;
-	transition-duration: 0.4s;
+	transition-duration: 0.2s;
 }
 
-button:hover
+.headerbar sussybaka:hover
 {
-	transform: scale(1.15) perspective(1px)
+	background-color: rgba(255,255,255,0.85);
+	backdrop-filter: blur(5px);
+	border: none;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	font-size: 16px;
+	padding: 10px 24px;
+	border-radius: 25px;
+	font-family: Poppins;
+}
+
+.headerbar sussy:hover
+{
+	background-color: rgba(0,0,0,0.85);
+	color: white;
+	transition-duration: 0.2s;
+}
+
+
+#asuka_homebutton:hover
+{
+	animation: rotation 1s ease;	 
 }
 
 	.headerbar
@@ -73,22 +101,16 @@ button:hover
 		{
 			display: none;
 		}
-		.hamburgermenu
-		{
-			display: inline-block;
-		}
 	}
 	
-	.burger-shower
+	#hamburger-input
 	{
-		visibility: hidden;
+		visibility: visible;
 	}
 
-	#hamburger-input:checked 
+	#hamburger-input:hover
 	{
 		display: inline-flex;
-		margin-top: 30vh;
-		transition: 0.4s;
 	}
 
 	#hammenu #sidemenu
@@ -120,14 +142,17 @@ button:hover
 		transform: scale(1.15) perspective(1px);
 	}
 
-	#hamburger-input:checked + #hammenu #sidemenu
+	#hamburger-input:hover + #hammenu #sidemenu
 	{
 		visibility: visible;
 		top: 0;
 	}
 	
-	#hamburger-input:check ~ .overlay
-	{
-		visibility: visible;
-		opacity: 0.4;
-	}
+	@keyframes rotation {
+		from {
+		  transform: rotate(0deg);
+		}
+		to {
+		  transform: rotate(359deg);
+		}
+	  }

@@ -2,15 +2,12 @@
 webelement_path= "/elements/"
 
 const hamburger_button = hamburger();
-const overlay_ham = newFunction();
 const ham_label = newFunction_1();
 document.getElementById("hamburgerjs").appendChild(hamburger_button);
 document.getElementById("hamburgerjs").appendChild(ham_label);
-document.getElementById("hamburgerjs").appendChild(overlay_ham);
 
 function hamburger(){
-    const hamburger_button = document.createElement("input");
-    hamburger_button.setAttribute("type", "checkbox");
+    const hamburger_button = document.createElement("button");
     hamburger_button.setAttribute("id", "hamburger-input");
     hamburger_button.setAttribute("class","burger-shower");
     return hamburger_button;
@@ -20,6 +17,7 @@ function newFunction_1() {
     const hamburger_img = document.createElement("img");
     hamburger_img.setAttribute("src", webelement_path + "asukafly.png");
     hamburger_img.setAttribute("class", "web_logo_header");
+    hamburger_img.setAttribute("id","asuka_homebutton");
     const ham_label = document.createElement("label");
     ham_label.setAttribute("id", "hammenu");
     ham_label.setAttribute("for", "hamburger-input");
@@ -75,11 +73,5 @@ function newFunction_1() {
     ham_label.appendChild(hamburger_img);
     ham_label.appendChild(ham_list);
     return ham_label;
-}
-
-function newFunction() {
-    const overlay_ham = document.createElement("div");
-    overlay_ham.setAttribute("class", "overlay");
-    return overlay_ham;
 }
 
