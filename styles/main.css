@@ -9,6 +9,7 @@ body{
     background-attachment: scroll;
     background-position: center top;	
     min-height: 95vh; 
+    margin: 1em 0;
 }
 
 #particles-js 

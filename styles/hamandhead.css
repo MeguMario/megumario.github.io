@@ -4,9 +4,9 @@
 	width: 50px;
 }
 
-button:hover
+.osulogo:hover
 {
-	transform: scale(1.15) perspective(1px)
+	transform: scale(1.15) perspective(1px);
 }
 
 button{
@@ -30,12 +30,12 @@ button{
 	padding: 10px 24px;
 	border-radius: 25px;
 	font-family: Poppins;
+	transition-duration: 0.2s;
 }
 
 .headerbar sussy:hover
 {
-	background-color: rgba(0,0,0,0.85);
-	color: white;
+	filter: invert();
 	transition-duration: 0.2s;
 }
 
@@ -73,6 +73,7 @@ button{
 		padding: 10px 24px;
 		border-radius: 25px;
 		font-family: Poppins;
+		transition-duration: 0.2s;
 	}
 	
 		
@@ -80,6 +81,7 @@ button{
 	{
 		background-color: transparent;
 		border: none;
+		border-radius: 25px;
 		display: inline-block;
 		text-align: center;
 		text-decoration: none;
@@ -87,6 +89,7 @@ button{
 		font-size: 16px;
 		padding: 10px 24px;
 		font-family: Poppins;
+		transition-duration: 0.2s;
 	}
 			
 	.hamburgermenu

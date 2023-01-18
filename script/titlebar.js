@@ -62,7 +62,7 @@ function winnybutton() {
 function mangabutton() {
     const manga_main = document.createElement("button");
     const homepage_link = document.createElement("a");
-    homepage_link.setAttribute("href", "/manga/test/test.html");
+    homepage_link.setAttribute("href", "/manga/main.html");
     const homepage_text = document.createElement("sussybaka");
     homepage_text.innerHTML = "Manga";
     homepage_link.appendChild(homepage_text);

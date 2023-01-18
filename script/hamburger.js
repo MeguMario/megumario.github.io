@@ -41,7 +41,7 @@ function newFunction_1() {
 
     const ham_listcont4 = document.createElement("div");
     const ham_listcont_manga_link = document.createElement('a');
-    ham_listcont_manga_link.setAttribute("href", "/manga/test/test.html");
+    ham_listcont_manga_link.setAttribute("href", "/manga/main.html");
     const ham_listcont_manga_img = document.createElement('img');
     ham_listcont_manga_img.setAttribute("src","/elements/book.svg");
     ham_listcont_manga_link.appendChild(ham_listcont_manga_img);
