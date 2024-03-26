@@ -1,75 +1,104 @@
-
+//setting up some variables
 webelement_path= "/elements/"
+var t_object = ["section","section"]
+var sec0_attr = ["home","subpages"]
 
-    const homepage_main = homepagebutton();
-    const donate_main = donatebutton();
-    const info_main = infobutton();
-    const manga_main = mangabutton();
-    const winny_main = winnybutton();
-    document.getElementById("headerbarjs").appendChild(homepage_main);
-    document.getElementById("headerbarjs").append(donate_main);
-    document.getElementById("headerbarjs").append(info_main);
-    document.getElementById("headerbarjs").append(manga_main);
-    document.getElementById("headerbarjs").append(winny_main);
+var subpages = ["button","button","button","button"]
+var subpages_name = ["Donate","Links","Manga","Winnyace"]
+var subpages_icon = ["favorite","person","menu_book","question_mark"]
+var subpages_dest = ["'/donate.html'","'/info.html'","'/manga/main.html'","'/winnyace.html'"]
 
-function homepagebutton() {
-    const homepage_main = document.createElement("button");
-    homepage_main.setAttribute("title", "Homepage");
-    const homepage_link = document.createElement("a");
-    homepage_link.setAttribute("href", "/index.html");
-    const homepage_img = document.createElement("img");
-    homepage_img.setAttribute("src", webelement_path + "asukafly.png");
-    homepage_img.setAttribute("class", "web_logo_header");
-    homepage_img.setAttribute("id","asuka_homebutton");
-    homepage_link.appendChild(homepage_img);
-    homepage_main.appendChild(homepage_link);
-    return homepage_main;
+titlebar(); //init titlebar
+
+function titlebar(){
+
+    // setting up the title bar
+    const div_titlebar = document.createElement("div");
+    document.body.prepend(div_titlebar)
+    div_titlebar.setAttribute("class","titlebar")
+    
+   // setting up the mobile bar
+   const div_mobilebar = document.createElement('div')
+   document.body.prepend(div_mobilebar)
+   div_mobilebar.setAttribute("class","mobilebar")
+
+    // creating title bar object
+    for (var i = 0; i < t_object.length; i++){
+        var t_obj = document.createElement(t_object[i]);
+        div_titlebar.append(t_obj);;
+        t_obj.setAttribute("id",sec0_attr[i])
+    }
+
+    // creating mobile bar object (copy of above code because merging them doesn't work)
+    for (var i = 0; i < t_object.length; i++){
+        var t_obj = document.createElement(t_object[i]);
+        div_mobilebar.append(t_obj);;
+        t_obj.setAttribute("id",sec0_attr[i]+'_mobile')
+    }
+
+   // home button
+   var homebotan_func = document.createElement("a")
+   Object.assign(homebotan_func, {
+        href: '/index.html',
+        id: 'homebotan_link'
+   })
+   document.getElementById("home").append(homebotan_func)
+   var homebotan = document.createElement("img")
+   Object.assign(homebotan, {
+        src: webelement_path + "asukafly.png",
+        id: 'asuka_homebutton',
+        href: '/index.html'
+   })
+   document.getElementById('homebotan_link').append(homebotan)
+
+   // home button for mobilebar
+   var homebotan_func = document.createElement("a")
+   Object.assign(homebotan_func, {
+        id: 'homebotan_link',
+        href: '/index.html'
+   })
+   document.getElementById("home_mobile").append(homebotan_func)
+   var homebotan = document.createElement("img")
+   Object.assign(homebotan, {
+        src: webelement_path + "asukafly.png",
+        id: 'asuka_homebutton',
+   })
+   document.getElementById('homebotan_link').append(homebotan)
+
+
+   // subpages spawn 
+   for (var i = 0; i < subpages.length ; i++){
+        var sp_obj =  document.createElement(subpages[i])
+        Object.assign(sp_obj, {
+            innerHTML: subpages_name[i],
+            id: 'button_sp',
+            type: 'button'
+        })
+        document.getElementById("subpages").append(sp_obj)
+        sp_obj.setAttribute('onclick', 'location.href=' + subpages_dest[i])
+        if (subpages_name[i] == "Donate"){
+            sp_obj.setAttribute('class', 'donatebotan')
+        }
+   }
+
+    // subpages spawn for mobilebar
+    for (var i = 0; i < subpages.length ; i++){
+        var sp_obj =  document.createElement(subpages[i])
+        Object.assign(sp_obj, {
+            innerHTML: subpages_name[i],
+            id: subpages_name[i] + '_mobilebar_button',
+            type: 'button'
+        })
+        document.getElementById("subpages_mobile").append(sp_obj)
+
+        var sp_obj_img = document.createElement('span')
+        Object.assign(sp_obj_img, {
+            id: subpages_name[i] + '_mobile',
+            innerHTML: subpages_icon[i]
+        })
+        sp_obj_img.setAttribute('class','material-icons-round')
+        document.getElementById(subpages_name[i] + '_mobilebar_button').append(sp_obj_img)
+
+        sp_obj.setAttribute('onclick', 'location.href=' + subpages_dest[i])
+    }
 }
-
-function donatebutton() {
-    const donate_main = document.createElement("button");
-    const homepage_link = document.createElement("a");
-    homepage_link.setAttribute("href", "/donate.html");
-    const homepage_text = document.createElement("sussy");
-    homepage_text.innerHTML = "Donate";
-    homepage_link.appendChild(homepage_text);
-    donate_main.appendChild(homepage_link);
-    return donate_main;
-}
-
-function infobutton() {
-    const info_main = document.createElement("button");
-    const homepage_link = document.createElement("a");
-    homepage_link.setAttribute("href", "/info.html");
-    const homepage_text = document.createElement("sussybaka");
-    homepage_text.innerHTML = "Links";
-    homepage_link.appendChild(homepage_text);
-    info_main.appendChild(homepage_link);
-    return info_main;
-}
-
-function winnybutton() {
-    const winny_main = document.createElement("button");
-    const homepage_link = document.createElement("a");
-    homepage_link.setAttribute("href", "/winnyace.html");
-    const homepage_text = document.createElement("sussybaka");
-    homepage_text.innerHTML = "Winnyace";
-    homepage_link.appendChild(homepage_text);
-    winny_main.appendChild(homepage_link);
-    return winny_main;
-}
-
-function mangabutton() {
-    const manga_main = document.createElement("button");
-    const homepage_link = document.createElement("a");
-    homepage_link.setAttribute("href", "/manga/main.html");
-    const homepage_text = document.createElement("sussybaka");
-    homepage_text.innerHTML = "Manga";
-    homepage_link.appendChild(homepage_text);
-    manga_main.appendChild(homepage_link);
-    return manga_main;
-}
-
-
-
-

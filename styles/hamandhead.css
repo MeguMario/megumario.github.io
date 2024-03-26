@@ -1,165 +1,162 @@
-.web_logo_header
-{
-	height: 50px;
-	width: 50px;
+.donatebotan{
+	background-color: rgba(255,255,255,0.85) !important;
+	color: black !important;
+	backdrop-filter: blur(50px);
 }
 
-.osulogo:hover
-{
-	transform: scale(1.15) perspective(1px);
+.donatebotan:hover{
+	background-color: black !important;
+	color: white !important;
 }
 
-button{
+#button_sp{
 	background-color: transparent;
 	border: none;
 	outline: none;
 	pointer-events: fill;
 	transition-duration: 0.2s;
-}
-
-.headerbar sussybaka:hover
-{
-	background-color: rgba(255,255,255,0.85);
-	backdrop-filter: blur(5px);
-	border: none;
-	display: inline-block;
-	text-align: center;
-	text-decoration: none;
-	color: black;
-	font-size: 16px;
-	padding: 10px 24px;
-	border-radius: 25px;
+	color: white;
+	width: 100px;
+	border-radius: 50px;
+	font-size: 100%;
+	height: 2em;
+	margin-left: 10px;
+	margin-right: 10px;
 	font-family: Poppins;
-	transition-duration: 0.2s;
 }
 
-.headerbar sussy:hover
-{
-	filter: invert();
-	transition-duration: 0.2s;
+#button_sp:hover{
+	background-color: white;
+	color: black;
+	transition: 0.25s linear;
 }
 
+section.home{
+	display: flex;
+	float: left;
+}
+
+section.subpages{
+	display: flex;
+	float: right;
+	justify-content: space-evenly;
+}
+
+#asuka_homebutton{
+	height: 50px;
+	width: 50px;
+}
 
 #asuka_homebutton:hover
 {
 	animation: rotation 1s ease;	 
 }
 
-	.headerbar
-	{
-		position: relative;
-		display: inline-flex;
-		min-height: 100%;
-		width: auto;
-		height: auto;
-		padding: auto;
-		margin: 0px;
-		clear: both;
-		justify-content: space-evenly;
-		border-radius: 15px;
-		align-items: center;
-	}
-
-	.headerbar sussy
-	{
-		background-color: rgba(255,255,255,0.85);
-		backdrop-filter: blur(5px);
-		border: none;
-		display: inline-block;
-		text-align: center;
-		text-decoration: none;
-		color: black;
-		font-size: 16px;
-		padding: 10px 24px;
-		border-radius: 25px;
-		font-family: Poppins;
-		transition-duration: 0.2s;
-	}
-	
-		
-	.headerbar sussybaka
-	{
-		background-color: transparent;
-		border: none;
-		border-radius: 25px;
-		display: inline-block;
-		text-align: center;
-		text-decoration: none;
-		color: white;
-		font-size: 16px;
-		padding: 10px 24px;
-		font-family: Poppins;
-		transition-duration: 0.2s;
-	}
+.titlebar
+{
+	position: sticky;
+	display: inline-flex;
+	min-height: 100%;
+	justify-content: space-between;
+	width: 90%;
+	border-radius: 15px;
+	align-items: center;
+	margin-left: 5%;
+}
 			
-	.hamburgermenu
+.mobilebar
+{
+	display: none;
+	position: sticky;
+	min-height: 100%;
+	justify-content: space-between;
+	width: 90%;
+	border-radius: 15px;
+	align-items: center;
+	margin-left: 5%;
+}
+
+	
+@media only screen and (max-width: 768px) and (max-width: 1024px)
+{
+	.titlebar
 	{
 		display: none;
 	}
-
-	
-	@media only screen and (max-width: 768px) and (max-width: 1024px)
-	{
-		.headerbar
-		{
-			display: none;
-		}
-		.hamburgermenu
-		{
-			display: flex;
-		}
-	}
-	
-	#hamburger-input
-	{
-		visibility: visible;
-	}
-
-	#hamburger-input:hover
+	.mobilebar
 	{
 		display: inline-flex;
 	}
-
-	#hammenu #sidemenu
-	{
-		position: absolute;
-		visibility: hidden;
-		transition: 0.4s;
-		top: -500px;
-		right: 0; bottom: 0; left: 0;
-		margin-left: auto;
-		margin-right: auto;
-		height: 20%;
-		border-radius: 0px 0px 15px 15px;
-		background-color: rgba(255,255,255,0.5);
-		backdrop-filter: blur(25px);
-		padding: 15px;
-		box-sizing: border-box;
-		z-index: 99;
-		display: inline-flex;
-		justify-content: space-evenly;
-		flex-flow: row;
-		align-items: center;
-		padding: auto;	
-		box-shadow: 0px 5px 100px 10px black;
-	}
-
-	#hammenu a:hover
-	{
-		transform: scale(1.15) perspective(1px);
-	}
-
-	#hamburger-input:hover + #hammenu #sidemenu
-	{
-		visibility: visible;
-		top: 0;
-	}
+}
 	
-	@keyframes rotation {
-		from {
-		  transform: rotate(0deg);
-		}
-		to {
-		  transform: rotate(359deg);
-		}
-	  }
+#Donate_mobilebar_button, #Links_mobilebar_button, #Manga_mobilebar_button, #Winnyace_mobilebar_button{
+	color: black;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	pointer-events: fill;
+	transition-duration: 0.2s;
+	width: 100px;
+}
+
+#subpages_mobile
+{
+	display: inline-flex;
+	top: -300%;
+	visibility: none;
+	position: absolute;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: rgba(255,255,255,0.85);
+	height: 100px;
+	left: -12%;
+	width: 120%;
+	margin-left: 0;
+	margin-right: 0;
+	overflow: hidden;
+	z-index: 99;
+	transition: 0.25s linear;
+}
+
+#Donate_mobile, #Links_mobile, #Manga_mobile, #Winnyace_mobile{
+	position: relative;
+	padding-top: 5px;
+	width: 100px;
+	left: -6%;
+	clear: both;
+}
+
+#Donate_mobile::after, #Links_mobile::after, #Manga_mobile::after, #Winnyace_mobile::after{
+	content: "w";
+	width: 50%;
+	height: 100%;
+	background-color: rgba(150,150,150,0.85);
+	position: absolute;
+	margin-top: -2px;
+	left: 25%;
+	z-index: -1;
+	border-radius: 50px;
+}
+
+#home_mobile:active + #subpages_mobile
+{
+	visibility: visible;
+	top: -30%;
+	transition: 0.25 linear;
+}
+#subpages_mobile:hover
+{
+	visibility: visible;
+	top: -30%;
+	transition: 0.25 linear;
+}
+
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}

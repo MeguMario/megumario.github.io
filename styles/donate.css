@@ -1,5 +1,6 @@
 	body{
-		background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(/elements/bocchi-bocchi-the-rock.gif); 
+		background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(https://media.nichegamer.com/wp-content/uploads/2023/09/koyuki-blue-archive-l2d-09-05-2023.jpg); 
+		background-size: cover;
 	}
 	
 	#text{
@@ -17,19 +18,10 @@
 	
 	.youtube
 	{
-		width: calc(16vh*7);
-		height: calc(9vh*7);
+		margin-top: 5%;
+		width: 50vw;
+		height: 50vh;
 	}
-	
-	@media only screen and (max-width: 512px) and (max-width: 717px)
-	{
-		.youtube
-		{
-			width: calc(9vh*4);
-			height: calc(16vh*4);
-		}
-	}
-
 	iframe
 	{		
 		display: flex;

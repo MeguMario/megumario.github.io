@@ -1,16 +1,37 @@
-#text{
+#text1, #text2{
+        margin-top: 2%;
 		color: #FFFFFF;
-        padding: 10px;
         align-items: center;
+        padding: 5px;
         display: block;
+        width: 50%;
         text-align: center;
 }
 
-#bocchigif{
+#text1{
+    position: absolute;
+    top: 14vh;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#text2{
+    position: absolute;
+    top: 85vh;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#bocchi{
     align-items: center;
     display: flex;
     padding: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;

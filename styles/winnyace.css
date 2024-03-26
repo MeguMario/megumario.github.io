@@ -22,6 +22,11 @@ body {
 	margin: auto;
 }
 
+#spinning_asuka{
+	width: 50%;
+	height: 50%;
+}
+
 .rotate {
 	display: flex;
 	animation: rotation 1s infinite linear;	 
