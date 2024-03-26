@@ -6,6 +6,10 @@ body {
 	background-position: center top;
 } 
 
+#links{
+	overflow: hidden;
+}
+
 .grid-container{
 	display: flex;
 	justify-content: space-evenly;
@@ -23,8 +27,8 @@ body {
 }
 
 #spinning_asuka{
-	width: 50%;
 	height: 50%;
+
 }
 
 .rotate {
@@ -48,4 +52,6 @@ h1, p, a{
 .content {
     position: relative;
 	margin-top: 10vh;
+	margin-left: 5px;
+	margin-right: 5px;
 }
