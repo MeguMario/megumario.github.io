@@ -1,0 +1,44 @@
+	body{
+		background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(https://media.nichegamer.com/wp-content/uploads/2023/09/koyuki-blue-archive-l2d-09-05-2023.jpg); 
+		background-size: cover;
+	}
+	
+	#text{
+		color: #FFFFFF;
+        align-items: center;
+        display: block;
+        text-align: center;
+	}
+
+	.container
+	{
+		padding-top: 25px;
+		height: 100%;
+		width: 100%;
+	}
+	
+	.youtube
+	{
+		margin-top: 5%;
+		width: 50vw;
+		height: 50vh;
+	}
+	iframe
+	{		
+		display: flex;
+		background-color: transparent;
+		padding-top: auto;
+		margin-left: auto;
+    	margin-right: auto;
+		clear: both;
+		border-radius: 25px;
+	}
+
+	.clock,.clock_m,.clock_h{
+		display: block;
+		z-index: 99;
+		overflow: visible;
+		position: absolute;
+		left: 50%;
+		transition: transform 1s linear;
+	}

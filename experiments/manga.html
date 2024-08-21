@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang='en'>
+<head>
+	<meta charset="utf-8">
+	<link href="/styles/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/hamandhead.css">
+	<link rel="stylesheet" href="/styles/iframe_youtubebg.css">
+	<link rel="stylesheet" href="styles/manga_main.css">
+	<link link rel="shortcut icon" type="image/png" href="/elements/asukafly.png">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<title>Meguro's homepage</title>
+	<div id="particles-js"></div>
+	<script src="/script/particles.min.js"></script>
+	<script src="/script/app.js"></script>
+	<script src="/script/titlebar.js" defer></script>
+	<script src="scripts/md_api.js" defer></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body onload="javascript:md_data_get()">
+	<div class="search">
+		<input type="text" id="searchbox" placeholder="Enter MangaDex's Manga ID to start testing" onclick="search()"></input>
+		<button type="submit" id="search_button" onclick="md_data_get()"><span class="material-symbols-outlined">
+			search
+			</span></button>
+		</div>
+	<div id="manga_infobox">
+		<img id="manga_cover" alt="cover"/>
+		<section>
+			<strong id="text2"></strong>
+			<strong id="manga_authorname"></strong>
+			<p id="text3"></p>
+			<section id="chapter_list"></section>
+		</section>
+	</div>
+</body>
+</html>

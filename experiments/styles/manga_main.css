@@ -17,6 +17,10 @@
 
 }
 
+body{
+    background-size: cover;
+}
+
 .container{
     display: grid;
     width: 100vw;
@@ -118,22 +122,19 @@
 
 #manga_infobox{
     display: flex;
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.5);
     margin: auto;
-    padding: 10 px;
+    padding: 10px;
     border-radius: 25px;
+    width: 75%;
+    overflow: hidden;
 }
 
 #manga_cover{
     width: 50vmin;
+    height: 50vmin;
     padding: 25px;
-}
-
-#manga_cover2{
-    display: none;
-    position: absolute;
-    width: 50vmin;
-    padding: 25px;
+    border-radius: 50px;
 }
 
 #manga_cover:active ~ #manga_cover2{
@@ -141,17 +142,19 @@
     transition: 0.2s;
 }
 
-strong{
-    align-items: center;
+#text2{
+    color: black;
+    margin-top: 1%;
     display: block;
     text-align: left;
     padding-left: 25px;
     font-size: 50px;
 }
 
-p{
+#text3, #manga_authorname{
+    color: black;
     align-items: center;
-    display: block;
+    float: left;
     text-align: left;
     padding-left: 25px;
     font-size: 25px;
@@ -168,4 +171,63 @@ p{
       repeating-linear-gradient(#ccc 0 1px, transparent 1px 100%),
       repeating-linear-gradient(90deg, #ccc 0 1px, transparent 1px 100%);
     background-size: 71px 71px;
+}
+
+
+div.search{
+    display: flex;
+    position: relative;
+    margin-left: 30%;
+    margin-top: 5%;
+    position: absolute;
+}
+
+#searchbox{
+    color: black;
+    background: rgba(255,255,255,0.65);
+    backdrop-filter: blur(10px);
+    height: 40px; width: 75vh;
+    text-align: center;
+    border: none; border-radius: 25px;
+}
+
+#search_button{
+    height: 40px; width: 40px;
+    background: transparent;
+    color: white;
+    text-align: center;
+    border: none; border-radius: 25px;
+    float: left;
+    margin-left: 5px; margin-top: 3.5px;
+}
+
+#chapter_list{
+    margin-top: 10%;
+    position: relative;
+    width: 50vw;
+}
+
+#chapter_button{
+    display: inline-flex;
+    margin-left: 1.25vw;
+	background-color: white;
+    text-align: center;
+	border: none;
+	outline: none;
+	pointer-events: fill;
+	transition-duration: 0.2s;
+	color: black;
+	width: 100px;
+    justify-content: space-around;
+    padding: 5px;
+    margin-top: 10px;
+    align-items: center;
+	border-radius: 50px;
+	font-size: 100%;
+	font-family: Poppins;
+}
+
+#chapter_button:hover{
+	background-color: black;
+	color: white;
 }
