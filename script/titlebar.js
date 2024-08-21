@@ -3,10 +3,10 @@ webelement_path = "/elements/"
 var t_object = ["section", "section"]
 var sec0_attr = ["home", "subpages"]
 
-var subpages = ["button", "button", "button", "button"]
-var subpages_name = ["Home", "Donate", "Links", "Winnyace"]
-var subpages_icon = ["home", "favorite", "person", "question_mark"]
-var subpages_dest = ["'/index.html'", "'/donate.html'", "'/info.html'", "'/winnyace.html'"]
+var subpages = ["button", "button", "button"]
+var subpages_name = ["Home", "Donate", "Links"]
+var subpages_icon = ["home", "favorite", "person"]
+var subpages_dest = ["'/index.html'", "'/donate.html'", "'/info.html'"]
 
 titlebar(); //init titlebar
 
