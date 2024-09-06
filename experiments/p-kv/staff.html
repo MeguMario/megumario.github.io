@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang='en'>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="view-transition" content="same-origin">
+	<link href="/styles/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/hamandhead.css">
+	<link rel="stylesheet" href="/styles/iframe_youtubebg.css">
+	<link rel="stylesheet" href="styles/p-kv.css" media="all">
+	<link link rel="shortcut icon" type="image/png" href="/elements/asukafly.png">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+	<title>Project KV</title>
+	<script src="/script/titlebar.js" defer></script>
+    <script src="scripts/interactive.js" defer></script>
+</head>
+<body onload=highlight_page()>
+    <section id="header" onmouseenter="navbar_reveal()" onmouseleave="navbar_hide()"></section>
+    <section id="content" loading="lazy" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+        <div id="headerBg">
+            <header id="page_header">STAFF</header>
+            <div class="line">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+                <div id="line4"></div>
+            </div>
+        </div>
+        <div class="nav_bar">        
+            <button class="nav_button" id="h_staff" onclick="location.href='staff.html'">STAFF</button>
+            <button class="nav_button" id="h_chara" onclick="location.href='character.html'">CHARACTER</button>
+            <button class="nav_button" id="h_story" onclick="location.href='story.html'">STORY</button>
+            <button class="nav_button" id="h_home" onclick="location.href='main.html'">HOME</button> 
+        </div>
+        <div class="pj_logo_staff">
+            <img id="head_logo_staff" alt="logo" src="https://projectkv.co.kr/img/staff/staff-logo.png"/>
+        </div>
+        <div class="staff_roll" id="staff_table">
+            <div id="company">
+                <div id="onp">
+                    <h6 id="onp_title">Original Works & Planning</h6>
+                    <h1 id="onp_name">Studio Alaya</h1>
+                </div>
+                <div id="prod">
+                    <h6 id="prod_title">Producing by</h6>
+                    <h1 id="prod_name">Dynamis One</h1>
+                </div>
+            </div>
+            <div id="personnel">
+                <div id="a_dic">
+                    <h6 id="a_aic_title">Art Director</h6>
+                    <h1 id="a_dic_name">DoReMi</h1>
+                </div>
+                <div id="s_dic">
+                    <h6 id="s_aic_title">Scenario Director</h6>
+                    <h1 id="s_dic_name">isakusan</h1>
+                </div>
+                <div id="m_dic">
+                    <h6 id="m_aic_title">Musical Director</h6>
+                    <h1 id="m_dic_name">Mitsukyo</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer"  loading="lazy" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+        <div class="social_media">
+            <a class="social_button" id="f_twitter" title="Twitter" href='https://x.com/DynamisOne'>
+                <svg viewBox="0 0 1200 1227" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"/>
+                </svg>
+            </a>         
+            <a class="social_button" id="f_youtube" title="YouTube" href='https://www.youtube.com/@dynamisone_official'>
+                <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 360.726">
+                    <path d="M456.035 10.769c22.031 5.926 39.377 23.386 45.265 45.56C512 96.516 512 180.363 512 180.363s0 83.846-10.7 124.037c-5.888 22.17-23.234 39.631-45.265 45.559-39.928 10.767-200.034 10.767-200.034 10.767s-160.107 0-200.035-10.767C33.937 344.031 16.587 326.57 10.7 304.4 0 264.209 0 180.363 0 180.363S0 96.516 10.7 56.329c5.887-22.174 23.237-39.634 45.266-45.56C95.894 0 256.001 0 256.001 0s160.106 0 200.034 10.769zm-252.398 245.72l133.818-76.122-133.818-76.131v152.253z"/>
+                </svg>
+            </a>
+            <a class="social_button" id="f_twitting" title="Share" onclick=shareTwitter()><img alt="Share" src="https://projectkv.co.kr/img/main/f-icon03.png"/></a>
+        </div>
+        <div class="game_logo">
+            <a href="/experiments/p-kv/main.html"><img alt="p-kv logo horizontal" id="sub_logo" src="https://projectkv.co.kr/img/main/f-logo01.png"/></a>
+        </div>
+        <div class="company_logo">
+            <a href="https://dynamisone.co.kr/"><img alt="dynamis one logo" id="dynamis_logo" src="https://projectkv.co.kr/img/main/f-logo02.png"/></a>
+            <a href="https://dynamisone.co.kr/"><img alt="studio a logo" id="s-a_logo" src="https://projectkv.co.kr/img/main/f-logo03.png"/></a>
+        </div>
+        <center><p id="copyright">© 2024 Dynamis One Inc. All rights reserved.</p></cent>
+    </section>
+</body>

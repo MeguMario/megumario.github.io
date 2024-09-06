@@ -1,6 +1,6 @@
 /*import axios from axios*/
-const baseUrl = 'https://api.allorigins.win/raw?url=https://api.mangadex.org';
-const coverUrl = 'https://api.allorigins.win/raw?url=https://uploads.mangadex.org'
+const baseUrl = 'https://api.allorigins.win/raw?url=' + encodeURIComponent("https://api.mangadex.org");
+const coverUrl = 'https://api.allorigins.win/raw?url=' + encodeURIComponent("https://uploads.mangadex.org");
 const mdUrl = 'https://mangadex.org'
 
 var test_output = document.getElementById('text2')

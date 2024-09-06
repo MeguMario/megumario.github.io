@@ -1,6 +1,6 @@
 //setting up some variables
 webelement_path = "/elements/"
-var t_object = ["section", "section"]
+var t_object = ["div", "div"]
 var sec0_attr = ["home", "subpages"]
 
 var subpages = ["button", "button", "button"]
@@ -13,14 +13,14 @@ titlebar(); //init titlebar
 function titlebar() {
 
 	// setting up the title bar
-	const div_titlebar = document.createElement("div");
+	const div_titlebar = document.createElement("section");
 	document.body.prepend(div_titlebar)
-	div_titlebar.setAttribute("class", "titlebar")
+	div_titlebar.setAttribute("id", "titlebar")
 
 	// setting up the mobile bar
-	const div_mobilebar = document.createElement('div')
+	const div_mobilebar = document.createElement('section')
 	document.body.prepend(div_mobilebar)
-	div_mobilebar.setAttribute("class", "mobilebar")
+	div_mobilebar.setAttribute("id", "mobilebar")
 
 	// creating title bar object
 	for (var i = 0; i < t_object.length; i++) {
