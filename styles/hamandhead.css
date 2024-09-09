@@ -86,11 +86,11 @@ section.subpages{
 	
 @media only screen and (max-width: 768px) and (max-width: 1024px)
 {
-	.titlebar
+	#titlebar
 	{
 		display: none;
 	}
-	.mobilebar
+	#mobilebar
 	{
 		display: inline-flex;
 	}
