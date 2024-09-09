@@ -133,7 +133,7 @@ function s_category() {
 function s_category2() {
     toggleCategory("s_synopsis", ["s_overview"], 
         "assets/img/story/story_2p.png", 
-        ["Feelings, you say?", "My feelings...", "She belongs only to ME!"],
+        ["Feelings, you say? You dare...", "My feelings...", "She belongs only to ME!"],
         "My feelings have never changed, they're the same as they've always been! They're for you, Mio! The time I had with you meant everything to me! But now... it's all gone... If she truly is gone, I'll have to redo it all! Watch me! Rewind our clocks, back to the start! Noah... My long shadow... You have stolen her away from me... I will extinguish you, and take her back! Mio is MINE! She's not yours, she's mine! You are nothing. "
     );
 }
