@@ -38,13 +38,13 @@ function highlight_page() {
     let headerBg = document.getElementById("headerBg");
 
     if (url.includes("main.html")) {
-        setHighlight("h_home", 'var(--bg-color)', "https://projectkv.co.kr/img/main/main_bg.jpg");
+        setHighlight("h_home", 'var(--bg-color)', "assets/img/main/main_bg.jpg");
     } else if (url.includes("story.html")) {
-        setHighlight("h_story", 'var(--accent-color-1)', "https://projectkv.co.kr/img/story/story_1p.png", "var(--accent-color-4)");
+        setHighlight("h_story", 'var(--accent-color-1)', "assets/img/story/story_1p.png", "var(--accent-color-4)");
     } else if (url.includes("staff.html")) {
-        setHighlight("h_staff", 'var(--accent-color-1)', "https://projectkv.co.kr/img/story/story_bg.jpg", "var(--accent-color-4)");
+        setHighlight("h_staff", 'var(--accent-color-1)', "assets/img/story/story_bg.jpg", "var(--accent-color-4)");
     } else if (url.includes("character.html")) {
-        setHighlight("h_chara", 'var(--accent-color-1)', "https://projectkv.co.kr/img/character/character_bg.jpg", "var(--accent-color-2)");
+        setHighlight("h_chara", 'var(--accent-color-1)', "assets/img/chara/character_bg.jpg", "var(--accent-color-2)");
     }
 }
 
@@ -124,7 +124,7 @@ function setTextContent_chara(name, desc) {
 
 function s_category() {
     toggleCategory("s_overview", ["s_synopsis"], 
-        "https://projectkv.co.kr/img/story/story_1p.png", 
+        "assets/img/story/story_1p.png", 
         ["The「Arcana」is the means", "By which all is revealed", "Death awaits you."],
         "The moment man devoured the fruit of knowledge, he sealed his fate... Entrusting his future to the cards, man clings to a dim hope. Yet, the Arcana is the means by which all is revealed... Beyond the beaten path lies the absolute end. It matters not who you are... "
     );
@@ -132,7 +132,7 @@ function s_category() {
 
 function s_category2() {
     toggleCategory("s_synopsis", ["s_overview"], 
-        "https://projectkv.co.kr/img/story/story_2p.png", 
+        "assets/img/story/story_2p.png", 
         ["Feelings, you say?", "My feelings...", "She belongs only to ME!"],
         "My feelings have never changed, they're the same as they've always been! They're for you, Mio! The time I had with you meant everything to me! But now... it's all gone... If she truly is gone, I'll have to redo it all! Watch me! Rewind our clocks, back to the start! Noah... My long shadow... You have stolen her away from me... I will extinguish you, and take her back! Mio is MINE! She's not yours, she's mine! You are nothing. "
     );
