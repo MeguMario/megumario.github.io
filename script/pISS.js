@@ -10,7 +10,7 @@ function statusIcon_create(statusValue){
     piss_status.setAttribute("data-item",ls_item)
     piss_status.setAttribute("data-field",ls_field)
     piss_counter.setAttribute("id","piss_chip")
-    piss_counter.setAttribute("class","w3")
+
     if (statusValue == undefined){
         piss_status.innerHTML = "..."
     }
@@ -21,8 +21,6 @@ function statusIcon_create(statusValue){
     const div_titlebar = document.getElementById("home")
     div_titlebar.append(piss_counter)
     piss_counter.append(piss_status)
-
-    console.log(statusValue)
 
     if (statusValue == undefined){
         piss_counter.style.setProperty("--bg-progress", "rgba(150,150,150,0.75)", "important")
