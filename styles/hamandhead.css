@@ -85,6 +85,11 @@ section.subpages{
 	height: 100%;
 }
 
+#piss_chip_sym{
+	justify-content: space-evenly;
+	align-items: center;
+}
+
 #titlebar
 {	
 	top: 20px;
