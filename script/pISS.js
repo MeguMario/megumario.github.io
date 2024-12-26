@@ -20,7 +20,7 @@ function statusIcon_create(){
 require(["LightstreamerClient", "Subscription", "StaticGrid"], 
     function dataFetch(LightstreamerClient, Subscription, StaticGrid) {
         statusIcon_create()
-        var client = new LightstreamerClient("http://push.lightstreamer.com","ISSLIVE");
+        var client = new LightstreamerClient("https://push.lightstreamer.com","ISSLIVE");
         client.connect();
     
         var grid = new StaticGrid("grid", true);
