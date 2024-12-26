@@ -34,6 +34,7 @@
 section.home{
 	display: flex;
 	float: left;
+	justify-content: space-evenly;
 }
 
 section.subpages{
@@ -50,6 +51,23 @@ section.subpages{
 #asuka_homebutton:hover
 {
 	animation: rotation 1s ease;	 
+}
+
+#piss_chip{
+	border-radius: 20px;
+	display: inline-flex;
+	align-items: center;
+	margin-top: 12px;
+	margin-left: 12px;
+	height: 2em;
+	width: 5em;
+	overflow: hidden;
+	position: absolute;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: rgba(50,205,50,0.75) !important;
+	color: white !important;
+	backdrop-filter: blur(50px);
 }
 
 #titlebar
