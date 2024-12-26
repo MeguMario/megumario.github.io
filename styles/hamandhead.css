@@ -80,7 +80,7 @@ section.subpages{
 	position: absolute;
 	left: 0;
 	width: var(--bg-width);
-	transition: width 0.2s ease-out;
+	transition: width 1s cubic-bezier(.4,0,.5,1);
 	background-color: var(--bg-progress);
 	height: 100%;
 }
