@@ -1,3 +1,7 @@
+:root{
+	--bg-width: 0%
+}
+
 .donatebotan{
 	background-color: rgba(255,255,255,0.85) !important;
 	color: black !important;
@@ -65,9 +69,20 @@ section.subpages{
 	position: absolute;
 	justify-content: space-evenly;
 	align-items: center;
-	background-color: rgba(50,205,50,0.75) !important;
+	background-color: rgba(150,150,150,0.75) !important;
 	color: white !important;
 	backdrop-filter: blur(50px);
+}
+
+#piss_chip::after{
+	z-index: -1;
+	content: " ";
+	position: absolute;
+	left: 0;
+	width: var(--bg-width);
+	transition: width 0.2s ease-out;
+	background-color: var(--bg-progress);
+	height: 100%;
 }
 
 #titlebar
